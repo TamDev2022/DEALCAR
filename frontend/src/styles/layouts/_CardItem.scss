@@ -1,0 +1,116 @@
+a {
+    text-decoration: none !important;
+}
+svg {
+    vertical-align: initial !important;
+}
+
+.item-car {
+    .img-car {
+        margin-bottom: 20px;
+        position: relative;
+
+        .fix-img {
+            position: relative;
+            img {
+                border-radius: 10px;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .label-pos {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+
+            .discount {
+                color: #fff;
+                font-size: 0.8em;
+                padding: 10px 15px;
+                background: rgba(255, 53, 1, 0.8);
+                border-radius: 20px;
+            }
+        }
+    }
+    .desc-car {
+        padding: 0 15px 15px;
+        position: relative;
+
+        .group-line {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 0;
+            margin-bottom: 5px;
+
+            &.n-price {
+                justify-content: space-between;
+
+                h2 {
+                    width: 70%;
+                    font-size: 1.125em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-wrap: normal;
+                    color: $black;
+                    margin-bottom: 0;
+                }
+                .price {
+                    width: 30%;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: $red;
+                    text-align: right;
+                    line-height: 1.5rem;
+                    margin-bottom: 0;
+
+                    .real {
+                        position: absolute;
+                        top: 32px;
+                        text-decoration: line-through;
+                        color: $gray-700;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            &.n-rating {
+                .star {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                }
+                span {
+                    &:not(.star_rate-num) {
+                        color: $black;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+
+        .group-label {
+            margin-bottom: 10px;
+            span {
+                padding: 8px;
+                border-radius: 15px;
+                background: $gray-200;
+                font-size: 0.8rem;
+                color: $black;
+                font-weight: 600;
+            }
+        }
+        .location {
+            color: $black;
+            font-size: 0.85rem;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}

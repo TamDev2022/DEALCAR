@@ -1,0 +1,65 @@
+.car-setting-container {
+    padding-bottom: 50px;
+    .dealcar-layout {
+        .body-container {
+            display: flex;
+
+            .content {
+                float: right;
+                width: 73%;
+                min-height: 500px;
+                padding-left: 90px;
+                border-left: 1px solid #e8eaef;
+
+                .title {
+                    display: block;
+                    margin-bottom: 70px;
+                    color: #141414;
+                    font-size: 2.25em;
+                    font-weight: bold;
+                    line-height: 1.25;
+                    text-transform: none;
+                }
+
+                .content-container {
+                    margin: 0 25px;
+
+                    h2 {
+                        display: block;
+                        margin-bottom: 10px;
+                        color: #141414;
+                        font-size: 2.25em;
+                        font-weight: bold;
+                        line-height: 1.25;
+                        text-transform: none;
+                    }
+                    h3 {
+                        display: block;
+                        margin-bottom: 10px;
+                        color: #141414;
+                        font-size: 1.125em;
+                        font-weight: bold;
+                        line-height: 1.5;
+                    }
+
+                    .col-1 {
+                        float: left;
+                        width: 50%;
+                        padding-right: 30px;
+                    }
+                    .col-2 {
+                        float: left;
+                        width: 50%;
+                    }
+
+                    .form-default {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: start;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

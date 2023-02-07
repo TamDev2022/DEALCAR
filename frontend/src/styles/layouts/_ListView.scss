@@ -1,0 +1,45 @@
+@import "../mixin/CarFindRes.scss";
+
+li {
+    list-style-type: none;
+}
+
+.module-map {
+    flex: 1;
+    .map-container {
+        .listing-car {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    padding: 5px;
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive_1024() {
+    .module-map {
+        flex: 1;
+        .map-container {
+            .listing-car {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        padding: 5px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

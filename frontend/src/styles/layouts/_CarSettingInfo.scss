@@ -1,0 +1,17 @@
+.content {
+    .content-container {
+        .form-default {
+            div {
+                width: 100%;
+
+                .line-form {
+                    margin-bottom: 10px;
+                }
+
+                textarea {
+                    min-height: 200px;
+                }
+            }
+        }
+    }
+}

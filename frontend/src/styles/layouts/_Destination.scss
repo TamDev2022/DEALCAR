@@ -1,0 +1,44 @@
+.destination__sect {
+    .m-container {
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                    a {
+                        text-decoration: none;
+                        .fix-img {
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 100%;
+                                height: 50%;
+                                left: 0;
+                                bottom: 0;
+                                z-index: 1;
+                                background: linear-gradient(transparent, #494a6e);
+                            }
+
+                            h3 {
+                                width: 100%;
+                                margin-left: 10px;
+                                position: absolute;
+                                bottom: 0;
+                                font-size: 1rem;
+                                color: $white;
+                                z-index: 2;
+
+                                span {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

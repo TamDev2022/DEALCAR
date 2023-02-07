@@ -1,0 +1,159 @@
+// @import "../layouts/BookingSlideBar";
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.booking-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fb;
+    position: relative;
+
+    .content-detail {
+        max-width: 70%;
+        position: relative;
+        padding: 20px 50px;
+        &:not(:first-child) {
+            margin-bottom: 20px;
+        }
+
+        .slide-box {
+            width: 100%;
+
+            .m-container {
+                width: 100%;
+                position: relative;
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    top: calc(50% - 16px);
+                    position: absolute;
+                    z-index: 5;
+                    background-color: rgba(255, 111, 135, 0.15);
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: rgba(255, 111, 135, 0.55);
+                    }
+                    i {
+                        font-size: 32px;
+                        color: #fff;
+                    }
+                }
+                .swiper-button-prev {
+                    left: 0;
+                }
+                .swiper-button-next {
+                    right: 0;
+                }
+                .swiper-container {
+                    width: 100%;
+                    overflow: hidden;
+                    border-radius: 5px;
+
+                    .swiper-wrapper {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+
+                        .swiper-slide {
+                            width: 100%;
+                            height: 300px;
+                            flex-shrink: 0;
+                            position: relative;
+
+                            .fix-img {
+                                width: 100%;
+                                height: 100%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    position: relative;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .info-car {
+            .group-line {
+                display: flex;
+                align-items: center;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .bar-line {
+                    width: 70px;
+                    height: 1px;
+                    background-color: #141414;
+                    margin: 0 15px;
+                }
+            }
+            .group-label {
+                margin-bottom: 10px;
+
+                span {
+                    padding: 5px 10px;
+                    background: $gray-300;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        .info-car--desc {
+            .group {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-bottom: 25px;
+
+                .lstitle-new {
+                    color: #a9aaad;
+                    font-size: 0.875em;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 1.5;
+                    width: 25%;
+                    padding-right: 5px;
+                }
+                .ctn-desc-new {
+                    width: 75%;
+
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 100%;
+
+                        li {
+                            width: 50%;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                    pre {
+                        white-space: pre-wrap;
+                        text-align: justify;
+                        word-wrap: break-word;
+                        font: inherit;
+                    }
+
+                    .accessories,
+                    .required {
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.car-area__sect {
+    .m-container {
+        div[role="button"] {
+            &.swiper-button-prev,
+            &.swiper-button-next {
+                top: 35%;
+            }
+        }
+    }
+}

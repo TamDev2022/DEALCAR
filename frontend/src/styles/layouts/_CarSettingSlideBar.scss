@@ -1,0 +1,33 @@
+.sidebar {
+    width: 300px;
+    padding: 15px;
+    background: #fafafa;
+    ul {
+        li {
+            width: 100%;
+            position: relative;
+            &.heading {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+            a {
+                display: block;
+                width: 100%;
+                padding: 5px 10px;
+                border-radius: 7px;
+                color: #141414;
+                font-size: 1.125em;
+                font-weight: normal;
+                line-height: 1.5;
+                &:hover {
+                    color: #fff;
+                    background: #2dd17d;
+                }
+                &.active {
+                    color: #fff;
+                    background: #00a550;
+                }
+            }
+        }
+    }
+}

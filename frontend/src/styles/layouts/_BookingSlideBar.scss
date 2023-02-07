@@ -1,0 +1,93 @@
+.rent-box {
+    width: 30%;
+    padding: 20px;
+    display: block;
+    border: solid 1px $gray-300;
+    right: 0;
+    top: 0;
+    position: absolute;
+
+    .price-car {
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 18px;
+            font-weight: 700;
+            color: #67737f;
+            text-decoration: line-through;
+        }
+        h3 {
+            margin: 0 auto;
+            font-weight: 700;
+            color: rgb(22, 133, 22);
+        }
+    }
+
+    .choose-date {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        label {
+            width: 100%;
+            margin: 5px 0;
+        }
+        .wrap-input.date {
+            width: 60%;
+        }
+        .wrap-input.time {
+            width: 30%;
+        }
+        .wrap-input {
+            margin: 0;
+
+            input,
+            select {
+                width: 100%;
+                height: 45px;
+                border-radius: 5px;
+                border: 1px solid;
+
+                &:focus {
+                    outline-style: solid;
+                    outline: 2px solid #c8d9fc;
+                    border: 1px solid #c8d9fc;
+                }
+            }
+        }
+    }
+    .err-mess {
+        font-size: 14px;
+        color: #f44336;
+        font-weight: 400;
+    }
+    .location {
+        margin: 20px 0px;
+        p {
+            font-weight: bold;
+        }
+    }
+    .calculation-price {
+        margin: 20px 0px;
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        div {
+            margin: 10px 0;
+        }
+    }
+
+    .wrap-btn {
+        width: 100%;
+        margin: 20px 0;
+
+        button {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$res_1024: "only screen and (max-width: 1024px)";
+$res_1260: "only screen and (min-width: 1260px)";
+
+$breakpoints: (
+    phone-sm: 420px,
+    phone: 767px,
+    tablet: 768px,
+    tablet-lg: 1024px,
+    desktop: 1025px,
+    desktop-lg: 1600px,
+);
+
+@mixin responsive_1024() {
+    @media #{$res_1024} {
+        @content;
+    }
+}
+@mixin responsive_1260() {
+    @media #{$res_1260} {
+        @content;
+    }
+}
